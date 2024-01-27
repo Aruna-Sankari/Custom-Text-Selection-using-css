@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Text Selection</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .select::selection{
+            background-color:blueviolet;
+            color:white;
+        }
+        h3::selection{
+            background-color: brown;
+            color:white;
+        }
+        body{
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            flex-direction: column;
+        }
+        h3{
+            font-size: 19px;
+            font-weight: 700;
+        }
+        p{
+            padding:10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h3>Custom Text Selection</h3>
+    <p class="select">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est quas deleniti repellat unde laborum doloremque repudiandae minima! Atque nisi quisquam iste ea ipsam eveniet deserunt ullam, dignissimos voluptatem ad.</p>
+</body>
+</html>
